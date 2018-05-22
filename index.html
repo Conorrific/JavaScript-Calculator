@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="header">
+    <h1 id="heading">Mathematical Operation Application Machine</h1>
+    <p>version 1.0</p>
+</div>
+
+<div class="container">
+    <input type="text" id="firstNumberTextBox">
+    <input type="text" id="secondNumberTextBox"><br>
+    <button id="addButton">+</button>
+    <button id="subButton">-</button><br>
+    <button id="multiplyButton">*</button>
+    <button id="divideButton">/</button><br>
+    <button id="equalButton">=</button>
+    <button onmouseout="clearAnswer()" onclick="showAnswer()">Show Answer</button>
+    <h1 id="answer"></h1>
+</div>
+<script>
+function showAnswer(){
+    var answer = document.getElementById('answer')
+    answer.innerHTML = Date();
+}
+function clearAnswer(){
+    var answer = document.getElementById('answer');
+    answer.innerHTML = '';
+} 
+// use this to show answer on click? maybe and put all this script code in a js file
+
+</script>
+
+
+</body>
+
+<script src="main.js"></script>  
+</html>
